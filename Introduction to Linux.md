@@ -164,7 +164,7 @@ After writing your script you will need to make it executable by using the **_ch
 # Let's try out a short script that prints out a sentence. . .
 [TestScript](https://github.com/BioinfoNet/Introduction-to-Linux/blob/master/Images/bashTest.sh)
 
-[AdvancedScript](Introduction-to-Linux/corr_seq.py)
+[AdvancedScript](https://github.com/BioinfoNet/Introduction-to-Linux/blob/master/corr_seq.py)
 
 =============================================================================================
 
