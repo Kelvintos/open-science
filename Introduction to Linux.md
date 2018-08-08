@@ -9,10 +9,10 @@ autosize: true
 Objectives
 ========================================================
 - Understand basic Linux terminologies
-- Reasons to adopt linux
+- Reasons to adopt Linux
 - Understand basic Linux filesystem
 - Differentiate between relative and absolute paths
-- Learn to make and commmon operations with directories
+- Learn to make and common operations with directories
 - Be able to explain the "ls" output
 - Know how to manipulate files and file contents
 - Basics of shell scripting
@@ -33,13 +33,13 @@ makes use of visual representations of elements
 Why Linux?
 ========================================================
 - It is FLOSS-based
-- World's largest and most prevanlent open source
+- World's largest and most prevalent open source
 - Long Term Support (LTS)
 - Many developers around the world contribute to it
 - Most secure
 - Customizable 
 - Multi-user, multi-tasking (servers)
-- Major force in computing, eg. supercomps, phones, stock exchages etc
+- A Major force in computing, eg. supercomputers, phones, stock exchanges etc
 
 File System
 ========================================================
@@ -84,7 +84,7 @@ Some of the commands associated with directories include:
 - To create a dir use **_mkdir_** <_dirName_>
 - To remove a dir use **_rmdir_** <_dirNmae_>
 - To move from one dir to another, use **_cd_** <_dirPath_>
-- To list dir content, use **_ls_** whille inside the dir or **_ls_** <_dirPath_> from a different dir
+- To list dir content, use **_ls_** while inside the dir or **_ls_** <_dirPath_> from a different dir
 - To rename a dir, use **_mv_** <_oldName_> <_newName_>
 
 Output of the ls -lh Cmd
@@ -94,7 +94,7 @@ Output of the ls -lh Cmd
  <ol type="I">
   <li>File(-) or Directory(d) or Symlink(l)</li>
   <li>Owner file permissions</li>
-  <li>Group file oermissions</li>
+  <li>Group file permissions</li>
   <li>Global user file permissions</li>
   <li>Number of links</li>
   <li>Owner name</li>
@@ -150,7 +150,7 @@ __Wildcards__: special characters used as patterns to help with the quick target
 Shell scripting
 ========================================================
 __What is a script?__
-A short program written in of the programming languages used for automation, especially when halding huge amounts of data which require similar treatment. A shell script file basically contain a set of instructions in a shell language to be performed on files
+A short program written in the programming languages used for automation, especially when handling huge amounts of data which require similar treatment. A shell script file basically contains a set of instructions in a shell language to be performed on files
 
 __What is shebang?__
 Begins a shell script, to set the interpreter environment to used to execute the set of instructions following, "_bash_" is such an interpreter, several others exist. Syntax **__#!AbsolutePathOfInterpreter__** eg. **__#!/bin/bash__** or **__#!/usr/bin/python__**
