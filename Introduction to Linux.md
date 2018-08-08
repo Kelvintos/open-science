@@ -12,7 +12,7 @@ Objectives
 - Reasons to adopt Linux
 - Understand basic Linux filesystem
 - Differentiate between relative and absolute paths
-- Learn to make and common operations with directories
+- Learn to make dirs and common operations with directories
 - Be able to explain the "ls" output
 - Know how to manipulate files and file contents
 - Basics of shell scripting
@@ -27,8 +27,7 @@ software directly to the hardware interfaces.
 
 - **CLI/Terminal** - a method of interaction with the computer based on text commands entered at the prompt
 
-- **GUI** - a method of interaction with the computer that
-makes use of visual representations of elements
+- **GUI** - a method of interaction with the computer that makes use of visual representations of elements
 
 Why Linux?
 ========================================================
@@ -45,15 +44,16 @@ File System
 ========================================================
 - Partition - a logical part of a disk
 - Filesystem - a method of storing/finding files on a hard disk
-Linux uses **'/'** to separate paths, windows uses **'\'**. A comparison between Win and Linux filesystems is illustrated in the image below
+Linux uses **'/'** to separate paths, windows uses **'\'**.
 
-![Windows-Linux FS Comparison](Images/LinuxFS.png)
+_Below is the partial Linux FS representation_
+
+![Linux File System](Images/LinuxFS.png)
 
 Linux
 =====================================
-_Below is the partial Linux FS representation_
-
-![Linux File System](Images/LinuxVsWin.png)
+A comparison between Win and Linux filesystems is illustrated in the image below
+![Windows-Linux FS Comparison](Images/LinuxVsWin.png)
 
 - For more details see the Linux [Filesysytem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf)
 - A new terminal will land you in the home directory
@@ -72,11 +72,11 @@ Let's illustrate the two paths with a fig
 
 ![Dir Tree](Images/LinuxPath.png)
 
-What is the absolute path to README.md? **_/home/oface/Git/Images/README.md_**
+What is the absolute path to "**README.md**"? **_/home/oface/Git/Images/README.md_**
     
-What is the path to LinuxFS.png assuming my current working directory is PythonCoding? **_./../Images/LinuxFS.png_**
+What is the path to "**LinuxFS.png**" assuming my current working directory is PythonCoding? **_./../Images/LinuxFS.png_**
   
-Directories and Associated Commands
+Directories and associated commands
 ========================================================
 - In Linux "__Directories__" are equivalent to Windows "__Folders__"
 
@@ -101,7 +101,7 @@ Output of the ls -lh Cmd
   <li>Owner group</li>
   <li>File size</li>
   <li>Date and time of last modification</li>
-  <li>File/Directory name/li>
+  <li>File/Directory name</li>
 </ol> 
 
 "__total BLOCKS__" means the total disk allocations of the dir content listed
@@ -143,9 +143,9 @@ Manipulating file contents
 - **_uniq_**: remove redundancies; syntax **_uniq_** <_file_>
 - **_join_**: compare content; syntax **_join_** <_file1_> <_file2_>. Output common entries
 - **_diff_**: compare content; syntax **_diff_** <_file1_> <_file2_>. Output the differences
-- **_grep_**: Global Regular Expression Pattern, search for patterns; syntax **_grep_** <_pattern_> <_file_>
+- **_grep_**: **G**lobal **R**egular **E**xpression **P**attern, search for patterns; syntax **_grep_** <_pattern_> <_file_>
 
-__Wildcards__: special characters used as patterns to help with the quick targeting of files or file sections/dirs, see [document](https://bioinf.comav.upv.es/courses/linux/_downloads/fsf_cmd_manual.pdf) on wildcards starting from page 23
+__Wildcards__: special characters used as patterns to help with quick targeting of files or file sections/dirs, see [document](https://bioinf.comav.upv.es/courses/linux/_downloads/fsf_cmd_manual.pdf) on wildcards starting from page 23
 
 Shell scripting
 ========================================================
@@ -153,12 +153,13 @@ __What is a script?__
 A short program written in the programming languages used for automation, especially when handling huge amounts of data which require similar treatment. A shell script file basically contains a set of instructions in a shell language to be performed on files
 
 __What is shebang?__
-Begins a shell script, to set the interpreter environment to used to execute the set of instructions following, "_bash_" is such an interpreter, several others exist. Syntax **__#!AbsolutePathOfInterpreter__** eg. **__#!/bin/bash__** or **__#!/usr/bin/python__**
+Begins a shell script, to set the interpreter environment to be used to execute the set of instructions that follow, "_bash_" is such an interpreter, several others exist. Syntax **__#!AbsolutePathOfInterpreter__** eg. **__#!/bin/bash__** or **__#!/usr/bin/python__**
 
-After writing your script you will need to make it executable by using the**_chmod_** command before you can run it
+After writing your script you will need to make it executable by using the **_chmod_** command before you can run it
 
 
 ========================================================
+
 Thank You
 
 email: ousodaniel@gmail.com
