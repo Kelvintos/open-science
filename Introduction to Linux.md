@@ -108,7 +108,7 @@ Output of the ls -lh Cmd
 
 Some shortcuts
 ========================================================
-- **_cd ~_** or **_cd_**: takes you to home dir from wherever
+- *__cd ~__* or **_cd_**: takes you to home dir from wherever
 - **_cd -_**: takes you to previous dir
 - **_cd .._**: takes you to parent dir
 - **_Ctrl+L_**: clears terminal
@@ -156,6 +156,8 @@ __What is shebang?__
 Begins a shell script, to set the interpreter environment to be used to execute the set of instructions that follow, "_bash_" is such an interpreter, several others exist. Syntax **__#!AbsolutePathOfInterpreter__** eg. **__#!/bin/bash__** or **__#!/usr/bin/python__**
 
 After writing your script you will need to make it executable by using the **_chmod_** command before you can run it
+
+# Let's try out a short script that prints out a sentence. . .
 
 
 ========================================================
