@@ -1,10 +1,14 @@
 Introduction to Linux
 ========================================================
 author: Ouso D. O.
+
 date: 09-08-2018
+
 autosize: true
 
-![The Penguin teacher!](Images/SenseiPenguin.png)
+# Sensei penguin!
+========================================================
+  ![The Penguin teacher!](Images/SenseiPenguin.png)
 
 Objectives
 ========================================================
@@ -108,7 +112,7 @@ Output of the ls -lh Cmd
 
 Some shortcuts
 ========================================================
-- *__cd ~__* or **_cd_**: takes you to home dir from wherever
+- **_cd~_** or **_cd_**: takes you to home dir from wherever
 - **_cd -_**: takes you to previous dir
 - **_cd .._**: takes you to parent dir
 - **_Ctrl+L_**: clears terminal
