@@ -162,9 +162,9 @@ Begins a shell script, to set the interpreter environment to be used to execute 
 After writing your script you will need to make it executable by using the **_chmod_** command before you can run it
 
 # Let's try out a short script that prints out a sentence. . .
-[TestScript](Introduction-to-Linux/Images/bashTest.sh)
+[TestScript](https://github.com/BioinfoNet/Introduction-to-Linux/blob/master/Images/bashTest.sh)
 
-============================================================================================================================
+=============================================================================================
 
 # Thank You
 
