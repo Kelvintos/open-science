@@ -1,0 +1,279 @@
+    1  ip addr sh
+    2  ls /root/
+    3  sudo ls /root/
+    4  clear
+    5  sudo systemctl status ssh
+    6  df -h
+    7  vi /etc/apt/sources.list
+    8  sudo vi /etc/apt/sources.list
+    9  df -h
+   10  fdisk -l
+   11  sudo fdisk -l
+   12  sudo fdisk /dev/sda
+   13  sudo reboot
+   14  jupyter notebook
+   15  conda update conda
+   16  conda --help
+   17  conda list
+   18  conda list | less
+   19  conda install numpy matplotlib
+   20  conda search scikit
+   21  conda install -c r r-essentials rstudio
+   22  sd -h
+   23  df -h
+   24  fg
+   25  df -h
+   26  conda clean
+   27  conda clean --all
+   28  conda install -c r r-essentials rstudio
+   29  df -h
+   30  ls
+   31  du -h Anaconda3-5.1.0-Linux-x86_64.sh 
+   32  rm -f Anaconda3-5.1.0-Linux-x86_64.sh 
+   33  df -h
+   34  ls
+   35  ls Downloads/
+   36  ls
+   37  ls Videos/
+   38  ls
+   39  ls /tmp/
+   40  df -h
+   41  sudo apt autoremove
+   42  ls /boot/
+   43  ls /boot/grub/
+   44  ls /
+   45  df -h
+   46  conda clean
+   47  conda clean --all
+   48  df -h
+   49  fg
+   50  df -h
+   51  gedit &
+   52  vi
+   53  df -h
+   54  fg
+   55  df -h
+   56  conda clean --all
+   57  conda list | less
+   58  conda clean --all
+   59  df -h
+   60  conda clean --all
+   61  df -h
+   62  conda clean --all
+   63  df -h
+   64  jupyter notebook
+   65  conda clean --all
+   66  rstudio
+   67  sudo shutdown -h now
+   68  sudo resize2fs /dev/sda1
+   69  df -h
+   70  sudo apt-get update
+   71  sudo apt-get upgrade
+   72  df -h
+   73  sudo apt-get dist-upgrade
+   74  wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh
+   75  df -h
+   76  chmod +x Anaconda3-5.1.0-Linux-x86_64.sh 
+   77  ./Anaconda3-5.1.0-Linux-x86_64.sh
+   78  sudo apt cache clean
+   79  sudo apt-get clean
+   80  df -h
+   81  date
+   82  sudo vi /etc/default/locale 
+   83  sudo vi /etc/ntp.conf 
+   84  ip addr sh
+   85  scp -v rosure@conference.kenet.or.ke:/etc/ntp.conf .
+   86  scp -v -P 62222 rosure@conference.kenet.or.ke:/etc/ntp.conf .
+   87  ls
+   88  diff ntp.conf /etc/ntp.conf 
+   89  sudo cp /etc/ntp.conf /etc/ntp.conf.orig
+   90  sudo vi /etc/ntp.conf
+   91  sudo  rm /etc/ntp.conf
+   92  sudo cp ntp.conf /etc/ntp.conf
+   93  sudo systemctl status ntp
+   94  sudo systemctl restart ntp
+   95  sudo systemctl status ntp
+   96  ntpq
+   97  ntpq -p
+   98  date
+   99  sudo vi /etc/default/locale 
+  100  sudo reboot
+  101  rm ntp.conf 
+  102  ls
+  103  ls
+  104  jupyter notebook
+  105  w
+  106  clear
+  107  sudo shutdown -h now
+  108  vi /etc/apache2/sites-enabled/jupyter.conf 
+  109  ls
+  110  vi set_jupyter_apache_hostname.sh
+  111  vi test.conf
+  112  sh set_jupyter_apache_hostname.sh
+  113  cat test.conf 
+  114  vi test.conf 
+  115  sh set_jupyter_apache_hostname.sh
+  116  cat test.conf 
+  117  sh set_jupyter_apache_hostname.sh
+  118  vi set_jupyter_apache_hostname.sh
+  119  cat set_jupyter_apache_hostname.sh 
+  120  vi set_jupyter_apache_hostname.sh 
+  121  sudo vi /etc/apache2/sites-available/jupyter.conf 
+  122  ls
+  123  sudo sh set_jupyter_apache_hostname.sh 
+  124  sudo vi /etc/apache2/sites-available/jupyter.conf 
+  125  vi set_jupyter_apache_hostname.sh 
+  126  chmod +x set_jupyter_apache_hostname.sh 
+  127  ls
+  128  cd
+  129  sudo vi /etc/rc.local 
+  130  ls
+  131  sudo mv set_jupyter_apache_hostname.sh /root/
+  132  sudo su
+  133  ip addr sh
+  134  rstudio
+  135  df -h
+  136  ls
+  137  sudo apt-get update
+  138  sudo apt-get upgrade
+  139  df -h
+  140  jupyter notebook --generate-config
+  141  vi /home/user/.jupyter/jupyter_notebook_config.py
+  142  mkdir cert
+  143  cd cert/
+  144  openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
+  145  ls
+  146  cd
+  147  openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
+  148  ls
+  149  mv my* cert/
+  150  cd cert/
+  151  chmod 400 my*
+  152  jupyter notebook password
+  153  cd
+  154  vi .jupyter/jupyter_notebook_config.json 
+  155  vi .jupyter/jupyter_notebook_config.py 
+  156  ls cert/mycert.pem 
+  157  pwd
+  158  ls  /home/user/cert/mycert.pem 
+  159  fg
+  160  cat .jupyter/jupyter_notebook_config.json 
+  161  fg
+  162  sudo apt-get install apache2
+  163  sudo a2enmod proxy proxy_http proxy_https proxy_wstunnel ssl headers
+  164  sudo service apache2 restart
+  165  cd /etc/apache2/sites-available/
+  166  ls
+  167  sudo cp 000-default.conf jupyter.conf
+  168  sudo vi jupyter.conf 
+  169  ls /home/user/cert/mycert.pem 
+  170  fg
+  171  sudo a2ensite jupyter.conf 
+  172  sudo apache2ctl -t
+  173  sudo service apache2 restart
+  174  jupyter notebook
+  175  sudo vi jupyter.conf 
+  176  sudo service apache2 restart
+  177  sudo a2dissite 000-default.conf 
+  178  sudo service apache2 restart
+  179  sudo vi jupyter.conf 
+  180  sudo service apache2 restart
+  181  jupyter notebook
+  182  cd
+  183  ls
+  184  jupyter notebook
+  185  ls
+  186  vi /etc/apache2/sites-enabled/jupyter.conf 
+  187  hostname
+  188  jupyter notebook
+  189  cat /etc/apache2/sites-enabled/jupyter.conf 
+  190  ip addr sh
+  191  sudo vi /etc/hosts
+  192  jupyter notebook
+  193  ls
+  194  cat hello-world.ipynb 
+  195  ls
+  196  ls
+  197  vi .jupyter/jupyter_notebook_config.py 
+  198  sudo /etc/init.d/apache2 restart
+  199  service apache2 restart
+  200  sudo su
+  201  which jupyter
+  202  df -h
+  203  cat /etc/rc.local 
+  204  su user -c "jupyter notebook --config=/home/user/.jupyter/jupyter_notebook_config.py --no-browser --notebook-dir=/home/user/"
+  205  sudo su
+  206  cd
+  207  ls
+  208  whoami
+  209  sdklfsdjkf
+  210  ls
+  211  whoami
+  212  cd
+  213  ls
+  214  whoami
+  215  w
+  216  cat /etc/rc.local 
+  217  cd /
+  218  su user -c "/home/user/anaconda3/bin/jupyter notebook --config=/home/user/.jupyter/jupyter_notebook_config.py --no-browser --notebook-dir=/home/user/"
+  219  jupyter notebook password
+  220  vi /home/user/.jupyter/jupyter_notebook_config.json
+  221  vi /home/user/.jupyter/jupyter_notebook_config.py 
+  222  sudo reboot
+  223  ps aux | grep jupyter
+  224  pkill jupyter
+  225  ps aux | grep jupyter
+  226  jupyter notebook
+  227  cat /etc/apache2/sites-enabled/jupyter.conf 
+  228  sudo su
+  229  ls
+  230  sudo vi /etc/apache2/sites-enabled/jupyter.conf 
+  231  sudo su
+  232  ls
+  233  whoami
+  234  ls
+  235  cd
+  236  mkdir openscience
+  237  cd openscience
+  238  clear
+  239  pwd
+  240  clear
+  241  cd
+  242  pwd
+  243  ls
+  244  cd openscience
+  245  ls
+  246  cd Introduction-to-Linux/
+  247  ls
+  248  cd Images/
+  249  ls
+  250  clear
+  251  ls ./../..
+  252  cd ..
+  253  cd Brian/
+  254  ls
+  255  cd ..
+  256  mkdir Kelvin
+  257  ls
+  258  rmdir Brian/
+  259  ls
+  260  mv Kelvin Kelvin1
+  261  ls
+  262  ls -lh
+  263  ls
+  264  clear
+  265  ls
+  266  pwd
+  267  ls
+  268  cd ..
+  269  ls 
+  270  cd
+  271  cd ./openscience/Introduction-to-Linux/
+  272  ls
+  273  clear
+  274  git inti
+  275  git init
+  276  git remote add origin https://github.com/Kelvintos/open-science.git
+  277  history 
+  278  clear
+  279  history > history.txt
